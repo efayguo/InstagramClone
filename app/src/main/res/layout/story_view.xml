@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/storyImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/avatar1"
+        android:onClick="onStoryImageClick"
+        />
+    <TextView
+        android:id="@+id/userNameTextView1"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/storyImageView"
+        android:text="Denis "
+        android:layout_marginLeft="20dp"
+        android:textSize="10sp"
+        android:gravity="center_horizontal"
+        android:textColor="#A5A5A5"
+        />
+
+    <Button
+        android:id="@+id/clickmeButton"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/userNameTextView1"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/button_background"
+        android:text="IGTV"
+        android:textColor="@android:color/white"
+        android:textSize="10dp" />
+</RelativeLayout>

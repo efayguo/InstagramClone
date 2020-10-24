@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/feedUserImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/avatar2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/feedUserNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#262626"
+        android:layout_toRightOf="@+id/feedUserImageView"
+        android:text="tammyolson"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="6dp"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/feedUserLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#262626"
+        android:layout_toRightOf="@+id/feedUserImageView"
+        android:text="Holland, Rotterdam"
+        android:layout_marginLeft="6dp"
+        android:textSize="10sp"
+        android:layout_alignBottom="@id/feedUserImageView"
+        android:scrollbars="vertical"
+
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/more"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/feedImageView"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:layout_below="@id/feedUserImageView"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/category5" />
+    <ImageView
+        android:id="@+id/heartIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/feedImageView"
+        android:src="@drawable/heart"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <ImageView
+        android:id="@+id/messageIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/feedImageView"
+        android:src="@drawable/message"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/heartIcon"
+        />
+    <ImageView
+        android:id="@+id/sendIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/feedImageView"
+        android:src="@drawable/send"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/messageIcon"
+        />
+    <ImageView
+        android:id="@+id/bookIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/feedImageView"
+        android:src="@drawable/book"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:id="@+id/likesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.4k likes"
+        android:layout_below="@id/heartIcon"
+        android:textColor="#262626"
+        android:textSize="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/likesTextView"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        >
+
+        <TextView
+            android:id="@+id/feedCommentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="👍👍👍 /nMicrosoft bought Skype for 8,5 billion!.. what a bunch of idiots!
+        I downloaded it for free!The human body was designed by a civil engineer. Who else would run a toxic waste pipeline through a recreational area?
+        Don't steal, don't lie, don't cheat, don't sell drugs. The government hates competition!Men are simple things.
+        They can survive a whole weekend with only three things: beer, boxer shorts and batteries for the remote control.
+        They can survive a whole weekend with only three things: beer, boxer shorts and batteries for the remote control./nMicrosoft bought Skype for 8,5 billion!.. what a bunch of idiots!
+        I downloaded it for free!The human body was designed by a civil engineer. Who else would run a toxic waste pipeline through a recreational area?
+        Don't steal, don't lie, don't cheat, don't sell drugs. The government hates competition!Men are simple things.
+        They can survive a whole weekend with only three things: beer, boxer shorts and batteries for the remote control.
+        They can survive a whole weekend with only three things: beer, boxer shorts and batteries for the remote control"
+            android:textColor="#262626"
+            android:textSize="10dp"
+            android:layout_marginLeft="10dp"
+            android:textIsSelectable="true"
+            />
+    </ScrollView>
+
+</RelativeLayout>
